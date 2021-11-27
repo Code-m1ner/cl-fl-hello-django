@@ -15,9 +15,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from todo.views import hello_Rashid
+from todo.views import get_todo_list
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('hello Rashid/', hello_Rashid, name = "Hello Rashid")
+    path('', get_todo_list, name="get_todo_list")
 ]

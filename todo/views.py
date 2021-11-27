@@ -3,5 +3,5 @@ from django.shortcuts import render, HttpResponse
 # Create your views here.
 
 
-def hello_Rashid(request):
-    return HttpResponse("hello Rashid")
+def get_todo_list(request):
+    return render(request, 'todo/get_todo_list.html')
